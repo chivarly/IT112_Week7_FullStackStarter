@@ -1,0 +1,59 @@
+/* ── FLEXBOX LAYOUT FOR PERFECT FOOTER ── */
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #f8f9fa;
+}
+
+main {
+  flex: 1;
+}
+
+/* ── PERFECT CUSTOM FOOTER ── */
+.custom-footer {
+  background: #111827 !important;
+  color: rgba(255, 255, 255, 0.8) !important;
+  border-top: 1px solid rgba(255, 255, 255, 0.1) !important;
+  padding: 2rem 0 !important;
+  margin-top: auto !important;
+  flex-shrink: 0;
+}
+
+.custom-footer p {
+  color: rgba(255, 255, 255, 0.8) !important;
+  font-size: 0.95rem;
+  margin: 0 !important;
+}
+
+/* ── RESPONSIVE IMPROVEMENTS ── */
+@media (max-width: 768px) {
+  .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  
+  main {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+  
+  header h1 {
+    font-size: 1.75rem !important;
+  }
+}
+
+/* ── CARD ENHANCEMENTS ── */
+.card {
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.15) !important;
+}
